@@ -24,7 +24,6 @@ body {
 }
 #page-11 {
   background: var(--page-11-color);
-  padding: 20px 200px;
 }
 #page-2 {
   background: var(--page-2-color);
@@ -133,7 +132,11 @@ body {
 #page-4 .img {
   box-shadow: 3px 5px 15px #222;
 }
-
+.page div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* page 6 contact */
 #contact-page {
   display: flex;
@@ -268,7 +271,10 @@ body {
     font-size: 1rem;
   }
   .page .img {
-    width: 90vw;
+    width: 80vw;
+  }
+  .page {
+    padding: 0;
   }
 }
 @media (max-width: 450px) {
