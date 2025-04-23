@@ -1,0 +1,143 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Welcome to BPCportofolio! Come and check our work in web designing">
+<meta name="title" content="BPC | portofolio">
+<meta name="keywords" content="BPCompany, BPC, BPCportofolio, bpcportofolio.xyz, gymfury, bpbuilders, edette restaurant, web design, portofoliu, portofolio,web portofolio">
+<link rel="stylesheet" href="main-page.css">
+<link rel="shortcut icon" type="image/x-icon" href="./icon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/21cc80cb87.js" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<title>BPC | Portofolio</title>
+</head>
+<body>
+    <!-- intro -->
+    <section id="page-1" class="page">
+        <div>
+            
+            <h1>Bun venit!</h1>
+        </div>
+        <p class="text">Această pagină reprezintă un portofoliu personal și conține o varietate de site-uri/modele de site-uri ce pot fi implementate și adaptate la cerințele fiecărui client. Modelele de mai jos sunt reprezentări fictive a unor metode de promovare in online a diferitelor inteprinderi și pot fi folosite în funcție de nevoile impuse. <br> <br> <b>Accesați imaginile pentru a deschide site-ul respectiv.</b> <br> <br> Pentru cereri personalizate nu ezitați să ne contactați în ultima secțiune a paginii. </p>
+    
+        <div>
+            <a href="#page-11" class="btn">
+                Dezvoltator Imobiliar <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- intro -->
+    <section id="page-11" class="page">
+        <div class="content">
+            <a target="_blank" href="./Proiect Dezvoltatori/index.html"><img class="img" src="./img/dezvoltatori.JPG" alt=""></a> 
+        <div>
+            <a href="#page-1" class="btn btn-dark">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#page-2" class="btn">
+                Restaurant <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="page-2" class="page">
+        <div class="content">
+            <a target="_blank" href="./Restaurant-Site/restaurant-edette.html"><img class="img" src="./img/edette.png" alt=""></a> 
+        </div>
+        <div>
+            <a href="#page-11" class="btn btn-dark">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#page-3" class="btn">
+                Agenție de fotografii <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- intro -->
+    <section id="page-3" class="page">
+        <div class="content">
+           <a target="_blank" href="./photo-site/photo-index.html"><img class="img" src="./img/bpphotography.PNG" alt=""> </a> 
+        </div>
+        <div>
+            <a href="#page-2" class="btn btn-dark">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#page-4" class="btn">
+             Sală de fitness <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="page-4" class="page">
+        <div class="content">
+            <a target="_blank" href="./Gym-site/gym.html"><img class="img" src="./img/gymfury.jpg" alt="">
+            </a> 
+        </div>
+        <div>
+           
+            <a href="#page-3" class="btn btn-dark">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#page-5" class="btn">
+                Firmă de construcții <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="page-5" class="page">
+        <div class="content">
+            <a target="_blank" href="./Construction site/pagina_principala.html"><img class="img" src="./img/bpbuilders.png" alt=""></a> 
+        </div>
+        <div>
+           
+            <a href="#page-4" class="btn btn-dark">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#contact-page" class="btn">
+                Pagină de contact<i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="contact-page" class="page">
+        <h1>Contactează-ne</h1>
+        <form class="contact-form" name="contact-mainpage" method="POST" data-netlify="true">
+            <div class="form-grup">
+              <label for="name">Nume</label>
+              <input type="name" name="name" id="name" placeholder="Nume">
+            </div>
+            <div class="form-grup">
+              <label for="email" >Email</label>
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-grup">
+              <label for="message">Mesaj</label>
+           <textarea name="text" id="text"></textarea>
+            </div>
+      
+            <input class="btn-contact" type="submit" value="Send">
+         </form>
+        <div>
+            <a href="#page-5" class="btn">
+                Înapoi <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </div>
+    </section>
+    <script>
+        $('.btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      700
+    );
+  }
+});
+    </script>
+</body>
+</html>
