@@ -132,11 +132,6 @@ body {
 #page-4 .img {
   box-shadow: 3px 5px 15px #222;
 }
-.page div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* page 6 contact */
 #contact-page {
   display: flex;
