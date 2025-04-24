@@ -192,6 +192,20 @@ body {
   background: #011741;
   cursor: pointer;
 }
+
+#page-6 {
+  background: #ffe5b4;
+  color: #222;
+}
+#page-6 img {
+  width: 40%;
+}
+#page-6 .content {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
 @media (max-width: 900px) {
   #page-1 {
     padding: 20px;
@@ -206,6 +220,15 @@ body {
   }
   .features p {
     margin-right: 0.4rem;
+  }
+}
+@media (max-width: 380px) {
+  #page-6 .content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #page-6 img {
+    width: 85%;
   }
 }
 @media (max-width: 430px) {
@@ -258,6 +281,7 @@ body {
   #page-3 .btn,
   #page-4 .btn,
   #page-5 .btn,
+  #page-6 .btn,
   #contact-page .btn,
   #page-2 a,
   #page-3 a,
